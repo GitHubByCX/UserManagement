@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="toindex" class="com.UM.action.StudentAction" method="toindex">
+			<result name="success">/index.jsp</result>
+			<result name="error">/WEB-INF/error.html</result>
+		</action>
+		
+		<action name="toupdate" class="com.UM.action.UpdateAction" method="toupdate">
+			<result name="success">/WEB-INF/update.jsp</result>
+		</action>
+		
+		<action name="update" class="com.UM.action.UpdateAction" method="update">
+			<result type="redirectAction">toindex</result>
+		</action>
+	</package>
+</struts>
