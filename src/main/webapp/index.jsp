@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="com.UM.entity.Student" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,7 +43,7 @@
 	function parseStrObjByRegExp(str){
 		var obj = {};
 		str.replace(/(\w+)(?:=([^,]*))?/g,function(str2, key, value){
-		obj[key] = value;
+			obj[key] = value;
 		});
 		return obj;
 	}

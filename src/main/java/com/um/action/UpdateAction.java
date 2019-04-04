@@ -1,16 +1,16 @@
-package com.UM.action;
+package com.um.action;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.ServletActionContext;
 
-import com.UM.entity.Student;
-import com.UM.service.StudentService;
+import com.um.entity.Student;
+import com.um.service.StudentService;
 
 public class UpdateAction {
 	
-	@Resource(name = "student")
+	@Resource
 	private StudentService service;
 	
 	public String toupdate() {

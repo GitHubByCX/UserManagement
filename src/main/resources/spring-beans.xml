@@ -9,7 +9,10 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
         <!-- 1 .启用注解式IOC -->
 	<context:annotation-config />
-	<context:component-scan base-package="com.UM" />
+	<context:component-scan base-package="com.um" />
+	
+	<bean id="studentAction" class="com.um.action.StudentAction" scope="prototype"></bean>
+	
         <!-- 2. 加载配置文件 -->
 	<context:property-placeholder ignore-unresolvable="true" location="classpath:jdbc.properties" />
        <!-- 3. 数据库连接池c3p0配置 -->  
@@ -26,7 +29,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 		<!-- 自动扫描注解方式配置的实体类文件 -->
 		<property name="packagesToScan">
 			<list>
-				<value>com.UM.entity</value>
+				<value>com.um.entity</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

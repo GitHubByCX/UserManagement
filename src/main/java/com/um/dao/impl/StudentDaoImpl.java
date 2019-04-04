@@ -1,4 +1,4 @@
-package com.UM.dao.impl;
+package com.um.dao.impl;
 
 import java.util.List;
 
@@ -7,11 +7,11 @@ import javax.annotation.Resource;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
-import com.UM.dao.studenDao;
-import com.UM.entity.Student;
+import com.um.dao.StudentDao;
+import com.um.entity.Student;
 
 @Repository
-public class StudentDaoImpl implements studenDao {
+public class StudentDaoImpl implements StudentDao {
 	
 	@Resource
 	private SessionFactory sessionFactory;

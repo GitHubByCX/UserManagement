@@ -1,11 +1,11 @@
-package com.UM.action;
+package com.um.action;
 
 import java.util.List;
 
 import javax.annotation.Resource;
 
-import com.UM.entity.Student;
-import com.UM.service.StudentService;
+import com.um.entity.Student;
+import com.um.service.StudentService;
 
 public class StudentAction {
 	
@@ -19,7 +19,7 @@ public class StudentAction {
 		this.list = list;
 	}
 
-	@Resource(name = "student")
+	@Resource
 	private StudentService service;
 	
 	public String toindex(){

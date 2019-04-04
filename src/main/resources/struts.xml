@@ -4,16 +4,16 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
-		<action name="toindex" class="com.UM.action.StudentAction" method="toindex">
+		<action name="toindex" class="studentAction" method="toindex">
 			<result name="success">/index.jsp</result>
 			<result name="error">/WEB-INF/error.html</result>
 		</action>
 		
-		<action name="toupdate" class="com.UM.action.UpdateAction" method="toupdate">
+		<action name="toupdate" class="com.um.action.UpdateAction" method="toupdate">
 			<result name="success">/WEB-INF/update.jsp</result>
 		</action>
 		
-		<action name="update" class="com.UM.action.UpdateAction" method="update">
+		<action name="update" class="com.um.action.UpdateAction" method="update">
 			<result type="redirectAction">toindex</result>
 		</action>
 	</package>

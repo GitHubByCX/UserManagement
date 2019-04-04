@@ -1,4 +1,4 @@
-package com.UM.service.impl;
+package com.um.service.impl;
 
 import java.util.List;
 
@@ -7,11 +7,11 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
-import com.UM.dao.impl.StudentDaoImpl;
-import com.UM.entity.Student;
-import com.UM.service.StudentService;
+import com.um.dao.impl.StudentDaoImpl;
+import com.um.entity.Student;
+import com.um.service.StudentService;
 
-@Service("student")
+@Service
 @Transactional
 public class StudentServiceImpl implements StudentService{
 	
